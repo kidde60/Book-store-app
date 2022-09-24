@@ -7,7 +7,7 @@ function App() {
   return (
     <header>
       <nav>
-        <h1 className="app-title">Bookstore CMS</h1>
+        <h1 className="app-title">Book Store</h1>
         <ul className="menu-list">
           <li>
             <Link to="/">Books</Link>

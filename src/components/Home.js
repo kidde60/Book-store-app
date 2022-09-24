@@ -6,13 +6,13 @@ const Home = () => (
     <h1> Books List</h1>
     <ul>
       <li>
-        <Book name="Acts of Desperation." author="Megan Nolan" />
+        <Book name="Acts of Desperation" author="Acts of Desperation by Megan Nolan" />
       </li>
       <li>
-        <Book name="Acts of Desperation." author="Megan Nolan" />
+        <Book name="Acts of Desperation" author="Acts of Desperation by Megan Nolan" />
       </li>
       <li>
-        <Book name="Acts of Desperation." author="Megan Nolan" />
+        <Book name="Acts of Desperation" author="Acts of Desperation by Megan Nolan" />
       </li>
     </ul>
 
