@@ -1,0 +1,39 @@
+/* Styling Header */
+.header,
+.header h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: brown;
+  margin: 10px 5%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+  list-style: none;
+  float: right;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Styling books display */
+.Home h1 {
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 15%;
+}
+
+.form {
+  margin: 10px 10% 5%;
+}
