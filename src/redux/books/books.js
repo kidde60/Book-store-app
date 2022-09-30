@@ -1,29 +1,49 @@
-// DECRARATION
-const ADD_BOOK = 'BOOK-STORE-APP/src/redux/books/ADD_BOOK';
-const REMOVE_BOOK = 'BOOK-STORE-APP/src/redux/books/REMOVE_BOOK';
+// adding actions type names
+const ADD_BOOK = 'BOOK-STORE-APP/books/ADD_BOOK';
+const REMOVE_BOOK = 'BOOK-STORE-APP/books/REMOVE_BOOK';
 
-// REDUCER
-const actionReducer = (state = [], action) => {
+// set initialState = []
+const InitialState = [
+  {
+    id: 0,
+    title: 'Book 1',
+    author: 'Author 1',
+  },
+  {
+    id: 1,
+    title: 'Book 2',
+    author: 'Author 2',
+  },
+  {
+    id: 2,
+    title: 'Book 3',
+    author: 'Author 3',
+  },
+];
+
+// add reducers
+const BookReducer = (state = InitialState, action) => {
   switch (action.type) {
     case ADD_BOOK:
-      return state.push(action.book);
-
-    case REMOVE_BOOK:
       return [
-        state.filter((book) => book !== action.id),
+        ...state, action.book,
       ];
+    case REMOVE_BOOK:
+      return state.filter((book) => book.id !== action.bookId);
     default: return state;
   }
 };
 
-// ACTION CREATORS
-const addAction = (book) => ({
+// action creator for adding a book
+const AddBook = (book) => ({
   type: ADD_BOOK,
   book,
 });
-const removeAction = (id) => ({
+
+// action creator for adding a book
+const RemoveBook = (bookId) => ({
   type: REMOVE_BOOK,
-  id,
+  bookId,
 });
 
-export default { actionReducer, addAction, removeAction };
+export { BookReducer, RemoveBook, AddBook };

@@ -1,17 +1,18 @@
-const CHECK_STATUS = 'BOOK-STORE-APP/components/categories/CHECK_STATUS';
+const CHECK_STATUS = 'BOOK-STORE-APP/category/CHECK_STATUS';
 
-// REDUCER
-const statusReducer = (state = [], action) => {
+// Reducer Function
+const StatusReducer = (state = [], action) => {
   switch (action.type) {
     case CHECK_STATUS:
-      return 'Under construction';
-    default: return state;
+      return 'Under Construction';
+    default:
+      return state;
   }
 };
 
-// ACTION CREATOR
-const statusAction = () => ({
+const checkStatus = () => ({
   type: CHECK_STATUS,
 });
 
-export default { statusReducer, statusAction };
+export default checkStatus;
+export { StatusReducer };
