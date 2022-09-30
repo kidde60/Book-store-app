@@ -1,24 +1,22 @@
 /* Styling Header */
-header {
-  height: 60px;
-  width: 100vw;
-  position: fixed;
-  margin-top: 0;
-  margin-left: 0;
-}
-
-nav {
+.header,
+.header h1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  color: brown;
+  margin: 10px 5%;
 }
 
-nav ul {
-  list-style: none;
+.nav-links {
   display: flex;
   gap: 20px;
+  text-decoration: none;
+  list-style: none;
+  float: right;
 }
 
-nav ul li {
+.link {
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -29,27 +27,13 @@ nav ul li {
   text-align: center;
 }
 
-.Home ul {
-  list-style: none;
-}
-
-.book {
+.card {
   display: flex;
-  gap: 20px;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 15%;
 }
 
-.booksList button {
-  margin-left: 45%;
-}
-
-.addBook form {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.checkStatus {
-  margin: 10% 50%;
-  width: 100px;
+.form {
+  margin: 10px 10% 5%;
 }
