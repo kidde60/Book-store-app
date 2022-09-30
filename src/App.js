@@ -1,28 +1,25 @@
 import React from 'react';
-import { Link, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import Categories from './components/Categories';
+import {
+  Route, Routes,
+  Link,
+} from 'react-router-dom';
+import BookList from './components/BookList';
+import Category from './components/Category';
 
-function App() {
-  return (
-    <header>
-      <nav>
-        <h1 className="app-title">Book Store</h1>
-        <ul className="menu-list">
-          <li>
-            <Link to="/">Books</Link>
-          </li>
-          <li>
-            <Link to="/categories">Categories</Link>
-          </li>
-        </ul>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/categories" element={<Categories />} />
-      </Routes>
-    </header>
-  );
-}
+const App = () => (
+  <div className="wrapper">
+    <div className="header">
+      <h1>Bookstore CMS</h1>
+      <ul className="nav-links">
+        <li className="link"><Link to="/">BOOKS</Link></li>
+        <li className="link"><Link to="/category">CATEGORY</Link></li>
+      </ul>
+    </div>
+    <Routes>
+      <Route path="/" exact element={<BookList />} />
+      <Route path="/category" exact element={<Category />} />
+    </Routes>
+  </div>
+);
 
 export default App;
