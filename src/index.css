@@ -1,0 +1,55 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #edeced;
+  color: #554d56;
+}
+
+/* Styling Header */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 15px 5%;
+  margin-top: 5%;
+  background: #fbfbfb;
+}
+
+.header h1 {
+  font-size: 35px;
+  color: #419bf9;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.link,
+a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #554d56;
+}
+
+.categories {
+  opacity: 0.5;
+}
+
+/* Styling books display */
+.Home h1 {
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 15%;
+}
+
+.form {
+  margin: 10px 10% 5%;
+}
