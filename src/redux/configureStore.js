@@ -1,6 +1,6 @@
 import { combineReducers, applyMiddleware, createStore } from 'redux';
 import thunk from 'redux-thunk';
-import { checkStatusRed } from './Categories/categories';
+import { checkStatusRed } from './categories/categories';
 import { handleBookRed } from './books/books';
 
 const allReducers = combineReducers({
