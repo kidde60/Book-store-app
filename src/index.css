@@ -65,12 +65,14 @@ a {
   color: #000;
   font-size: 30px;
   margin: 0;
+  width: 100%;
 }
 
 .author {
   margin: 0;
   color: #419bf9;
   font-size: 20px;
+  width: 100%;
 }
 
 .card-1 {
@@ -155,11 +157,8 @@ a {
 
 .title,
 .author {
-  font-size: 18px;
   width: 100%;
-  opacity: 0.5;
   padding: 0 10px;
-  background: #fbfbfb;
 }
 
 .add {
