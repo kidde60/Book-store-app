@@ -11,21 +11,22 @@ const Book = (obj) => {
   return (
     <div className="card">
       <div className="card-1">
-        <h2>{title}</h2>
-        <p>{author}</p>
+        <span className="span">Inspiration</span>
+        <h2 className="title">{title}</h2>
+        <p className="author">{author}</p>
         <div className="functions">
-          <p>Comments</p>
-          <button className="btn" type="button" onClick={() => RemoveBtn(id)}>Remove</button>
+          <p id="comments">Comments</p>
+          <button className="deleteBtn" type="button" onClick={() => RemoveBtn(id)}>Remove</button>
           <p>Edit</p>
         </div>
       </div>
       <div className="card-2">
-        <p className="percent">45%</p>
+        <h2 className="percent">45%</h2>
         <p className="completed">Completed</p>
       </div>
       <div className="hr" />
       <div className="card-3">
-        <p>CURRENT CHAPTER</p>
+        <p className="current">CURRENT CHAPTER</p>
         <p className="chapter">CHAPTER 12</p>
         <button className="btn" type="button">UPDATE PROGRESS</button>
       </div>

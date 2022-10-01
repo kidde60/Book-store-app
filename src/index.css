@@ -1,25 +1,41 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #edeced;
+  color: #554d56;
+}
+
 /* Styling Header */
-.header,
-.header h1 {
+.header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  color: brown;
-  margin: 10px 5%;
+  padding: 15px 10%;
+  margin: 5% 0;
+  background: #fbfbfb;
+}
+
+.header h1 {
+  font-size: 35px;
+  color: #419bf9;
+  margin: 0;
 }
 
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 50px;
   text-decoration: none;
   list-style: none;
-  float: right;
 }
 
-.link {
+.link,
+a {
   text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 15px;
+  color: #554d56;
+}
+
+.categories {
+  opacity: 0.5;
 }
 
 /* Styling books display */
@@ -29,11 +45,128 @@
 
 .card {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
   align-items: center;
-  margin: 10px 15%;
+  margin: 20px 10%;
+  background: #fbfbfb;
+  padding: 20px 50px;
 }
 
 .form {
   margin: 10px 10% 5%;
+}
+
+.span {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.title {
+  color: #000;
+  font-size: 30px;
+  margin: 0;
+}
+
+.author {
+  margin: 0;
+  color: #419bf9;
+  font-size: 20px;
+}
+
+.card-1 {
+  width: 30%;
+}
+
+.functions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deleteBtn {
+  padding: 0 10px;
+  border: none;
+  background: #fbfbfb;
+  color: #419bf9;
+  font-size: 15px;
+  border-left: 1px solid #c1bec1;
+  border-right: 1px solid #c1bec1;
+  height: 20px;
+}
+
+.functions p {
+  padding: 0 10px;
+  color: #419bf9;
+  font-size: 17px;
+}
+
+#comments {
+  padding-left: 0;
+}
+
+.card-2 {
+  padding: 0 10%;
+  border-right: 2px solid #edeced;
+}
+
+.percent {
+  color: #000;
+  font-size: 35px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.completed {
+  font-size: 20px;
+  opacity: 0.75;
+  margin: 0;
+}
+
+.current {
+  opacity: 0.5;
+  font-size: 15px;
+  margin: 0;
+}
+
+.chapter {
+  font-size: 15px;
+  color: #000;
+  margin-top: 10px;
+}
+
+.btn {
+  background-color: #419bf9;
+  color: #edeced;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form h1 {
+  font-size: 25px;
+  opacity: 0.9;
+}
+
+.input {
+  display: flex;
+  gap: 20px;
+}
+
+.title,
+.author {
+  font-size: 18px;
+  width: 100%;
+  opacity: 0.5;
+  padding: 0 10px;
+  background: #fbfbfb;
+}
+
+.add {
+  width: 30%;
+  font-size: 16px;
+}
+
+.statusBtn {
+  margin: 10px 10%;
 }

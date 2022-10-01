@@ -13,7 +13,7 @@ const Category = () => {
       <p>
         {Status}
       </p>
-      <button className="btn" onClick={() => display()} type="button">Check Status</button>
+      <button className="btn statusBtn" onClick={() => display()} type="button">Check Status</button>
     </>
   );
 };

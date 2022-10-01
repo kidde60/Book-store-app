@@ -26,7 +26,7 @@ const AddBooks = () => {
     <>
       <form className="form">
         <h1>ADD NEW BOOK</h1>
-        <div>
+        <div className="input">
           <input
             id="temp-id"
             type="text"
@@ -43,7 +43,7 @@ const AddBooks = () => {
             className="author"
           />
           <button
-            className="btn"
+            className="btn add"
             type="button"
             onClick={DisplayBook}
           >
