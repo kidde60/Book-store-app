@@ -4,9 +4,9 @@ const uniqueId = 'FN6czTU498riUjkFxFa3';
 const Url = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/${uniqueId}/books/`;
 
 // adding actions type names
-const ADD_BOOK = 'BOOKSTORE-REACT/books/ADD_BOOK';
-const REMOVE_BOOK = 'BOOKSTORE-REACT/books/REMOVE_BOOK';
-const GET_BOOK = 'BOOKSTORE-REACT/books/GET_BOOK';
+const ADD_BOOK = 'BOOK-STORE-APP/books/ADD_BOOK';
+const REMOVE_BOOK = 'BOOK-STORE-APP/books/REMOVE_BOOK';
+const GET_BOOK = 'BOOK-STORE-APP/books/GET_BOOK';
 
 const AddBook = (id, titName, authName) => (dispatch) => {
   axios.post(Url, {
