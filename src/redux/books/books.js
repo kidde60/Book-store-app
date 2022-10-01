@@ -53,7 +53,7 @@ const RemoveBook = (id) => (dispatch) => {
 // set initialStates
 const InitialState = [];
 // add reducers
-const handleBookRed = (state = InitialState, action) => {
+const BookReducer = (state = InitialState, action) => {
   switch (action.type) {
     case ADD_BOOK:
       return [
@@ -73,5 +73,5 @@ const handleBookRed = (state = InitialState, action) => {
 };
 
 export {
-  handleBookRed, AddBook, getBook, RemoveBook,
+  BookReducer, AddBook, getBook, RemoveBook,
 };

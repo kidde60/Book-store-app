@@ -5,7 +5,7 @@ const checkStatus = () => ({
 });
 
 // Reducer Function
-const checkStatusRed = (state = [], action) => {
+const StatusReducer = (state = [], action) => {
   switch (action.type) {
     case CHECK_STATUS:
       return 'Under Construction';
@@ -15,4 +15,4 @@ const checkStatusRed = (state = [], action) => {
 };
 
 export default checkStatus;
-export { checkStatusRed };
+export { StatusReducer };
