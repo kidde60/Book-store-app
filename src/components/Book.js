@@ -11,6 +11,7 @@ const Book = (obj) => {
   return (
     <div className="card">
       <div className="card-1">
+        <span>Action</span>
         <h2>{title}</h2>
         <p>{author}</p>
         <div className="functions">
