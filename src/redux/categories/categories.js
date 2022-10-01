@@ -1,7 +1,11 @@
-const CHECK_STATUS = 'BOOK-STORE-APP/category/CHECK_STATUS';
+const CHECK_STATUS = 'BOOKSTORE-REACT/category/CHECK_STATUS';
+
+const checkStatus = () => ({
+  type: CHECK_STATUS,
+});
 
 // Reducer Function
-const StatusReducer = (state = [], action) => {
+const checkStatusRed = (state = [], action) => {
   switch (action.type) {
     case CHECK_STATUS:
       return 'Under Construction';
@@ -10,9 +14,5 @@ const StatusReducer = (state = [], action) => {
   }
 };
 
-const checkStatus = () => ({
-  type: CHECK_STATUS,
-});
-
 export default checkStatus;
-export { StatusReducer };
+export { checkStatusRed };
