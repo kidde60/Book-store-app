@@ -3,20 +3,29 @@ import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
 import { AddBook } from '../redux/books/books';
 
+const clearInput = () => {
+  const title = document.querySelector('.title');
+  const author = document.querySelector('.author');
+  title.value = '';
+  author.value = '';
+};
 const AddBooks = () => {
   const dispatch = useDispatch();
-  const DisplayBook = () => {
+  const id = uuidv4();
+  const DisplayBook = (e) => {
+    e.preventDefault();
     const title = document.querySelector('.title').value;
     const author = document.querySelector('.author').value;
     if (title !== '' && author !== '') {
-      dispatch(AddBook({ id: uuidv4(), title, author }));
+      dispatch(AddBook(id, title, author));
+      clearInput();
     }
   };
 
   return (
     <>
       <form className="form">
-        <h1 className="heading">Add New Book</h1>
+        <h1>ADD NEW BOOK</h1>
         <div>
           <input
             id="temp-id"
@@ -36,9 +45,7 @@ const AddBooks = () => {
           <button
             className="btn"
             type="button"
-            onClick={() => {
-              DisplayBook();
-            }}
+            onClick={DisplayBook}
           >
             Add Book
           </button>
