@@ -1,0 +1,55 @@
+/* Styling Header */
+header {
+  height: 60px;
+  width: 100vw;
+  position: fixed;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Styling books display */
+.Home h1 {
+  text-align: center;
+}
+
+.Home ul {
+  list-style: none;
+}
+
+.book {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.booksList button {
+  margin-left: 45%;
+}
+
+.addBook form {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.checkStatus {
+  margin: 10% 50%;
+  width: 100px;
+}
